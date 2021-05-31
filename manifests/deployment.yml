@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tejadwebapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tejadwebapp
+  template:
+    metadata:
+      labels:
+        app: tejadwebapp 
+    spec:
+      containers:
+        - name: tejadwebapp 
+          image: testdot.azurecr.io/tejadwebapp
+          ports:
+          - containerPort: 80
