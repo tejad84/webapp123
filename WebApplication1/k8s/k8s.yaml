@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
       - name: webapplication
-        image: acr image url
+        image: testdot.azurecr.io
         ports:
         - containerPort: 80
